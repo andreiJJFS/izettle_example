@@ -26,7 +26,7 @@ allprojects {
             url = uri("https://maven.pkg.github.com/iZettle/sdk-android")
             credentials(HttpHeaderCredentials) {
                 name "Authorization"
-                value "Bearer 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"
+                value "Bearer ${iZettleSDK.githubAccessToken}"
             }
             authentication {
                 header(HttpHeaderAuthentication)
